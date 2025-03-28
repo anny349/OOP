@@ -139,7 +139,7 @@ public class MainFrame extends javax.swing.JDialog {
                 viewLeaveStatusMouseClicked(evt);
             }
         });
-        jPanel2.add(viewLeaveStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 345, 161, 30));
+        jPanel2.add(viewLeaveStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 255, 161, 30));
 
         viewbtn.setBackground(new java.awt.Color(102, 102, 102));
         viewbtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -211,7 +211,7 @@ public class MainFrame extends javax.swing.JDialog {
                 exitbtnMouseClicked(evt);
             }
         });
-        jPanel2.add(exitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 255, 161, 30));
+        jPanel2.add(exitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 345, 161, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/Red and Beige Geometric Style Custom Motorcycle Garage Presentation.png"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 400));
