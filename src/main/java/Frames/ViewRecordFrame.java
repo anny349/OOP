@@ -256,8 +256,6 @@ public class ViewRecordFrame extends javax.swing.JDialog {
         statusCB.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Regular", "Probationary", "Contractual" }));
         statusCB.setToolTipText("Choose from Regular, Probationary, or Contractual.");
         getContentPane().add(statusCB, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 302, 387, -1));
-
-        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/Black and White Illustrated Custom Motorcycle Poster.jpg"))); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 610));
 
         pack();

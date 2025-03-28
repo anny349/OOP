@@ -129,8 +129,6 @@ public class LeaveViewFrame extends javax.swing.JDialog {
             }
         });
         getContentPane().add(denyButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 360, 94, 30));
-
-        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/Red and Beige Geometric Style Custom Motorcycle Garage Presentation.png"))); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 410));
 
         pack();

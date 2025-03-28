@@ -104,7 +104,6 @@ public class CreateUserLogin extends javax.swing.JDialog {
         getContentPane().add(CloseButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 250, 60, 30));
 
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/Black and White Illustrated Custom Motorcycle Poster.jpg"))); // NOI18N
         jLabel20.setToolTipText("");
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
