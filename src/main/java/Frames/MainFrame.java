@@ -55,6 +55,8 @@ public class MainFrame extends javax.swing.JDialog {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         CreateLoginUser = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         table1 = new javax.swing.JTable();
@@ -73,6 +75,23 @@ public class MainFrame extends javax.swing.JDialog {
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Verdana", 3, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel3.setText("MotorPH");
+        jLabel3.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        jLabel3.setOpaque(true);
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 180, 40));
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(153, 153, 153));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("EMPLOYEE PORTAL");
+        jLabel2.setBorder(javax.swing.BorderFactory.createCompoundBorder());
+        jLabel2.setOpaque(true);
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 40, 180, 30));
+
         CreateLoginUser.setBackground(new java.awt.Color(102, 102, 102));
         CreateLoginUser.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         CreateLoginUser.setForeground(new java.awt.Color(255, 255, 255));
@@ -83,7 +102,7 @@ public class MainFrame extends javax.swing.JDialog {
                 CreateLoginUserMouseClicked(evt);
             }
         });
-        jPanel2.add(CreateLoginUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 300, 161, 30));
+        jPanel2.add(CreateLoginUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 161, 30));
 
         table1.setForeground(new java.awt.Color(51, 51, 51));
         table1.setModel(new javax.swing.table.DefaultTableModel(
@@ -100,9 +119,16 @@ public class MainFrame extends javax.swing.JDialog {
             Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
             }
         });
         table1.setSelectionBackground(new java.awt.Color(102, 102, 102));
@@ -127,7 +153,7 @@ public class MainFrame extends javax.swing.JDialog {
             table1.getColumnModel().getColumn(6).setPreferredWidth(120);
         }
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 770, 350));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 780, 370));
 
         viewLeaveStatus.setBackground(new java.awt.Color(102, 102, 102));
         viewLeaveStatus.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -139,7 +165,7 @@ public class MainFrame extends javax.swing.JDialog {
                 viewLeaveStatusMouseClicked(evt);
             }
         });
-        jPanel2.add(viewLeaveStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 255, 161, 30));
+        jPanel2.add(viewLeaveStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 161, 30));
 
         viewbtn.setBackground(new java.awt.Color(102, 102, 102));
         viewbtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -151,7 +177,7 @@ public class MainFrame extends javax.swing.JDialog {
                 viewbtnMouseClicked(evt);
             }
         });
-        jPanel2.add(viewbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 30, 161, 30));
+        jPanel2.add(viewbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 161, 30));
 
         addbtn.setBackground(new java.awt.Color(102, 102, 102));
         addbtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -163,7 +189,7 @@ public class MainFrame extends javax.swing.JDialog {
                 AddEmployee(evt);
             }
         });
-        jPanel2.add(addbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 75, 161, 30));
+        jPanel2.add(addbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 161, 30));
 
         payslipbtn.setBackground(new java.awt.Color(102, 102, 102));
         payslipbtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -175,7 +201,7 @@ public class MainFrame extends javax.swing.JDialog {
                 PaySlip(evt);
             }
         });
-        jPanel2.add(payslipbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 165, 161, 30));
+        jPanel2.add(payslipbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 161, 30));
 
         leavebtn.setBackground(new java.awt.Color(102, 102, 102));
         leavebtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -187,7 +213,7 @@ public class MainFrame extends javax.swing.JDialog {
                 leavebtnMouseClicked(evt);
             }
         });
-        jPanel2.add(leavebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 210, 161, 30));
+        jPanel2.add(leavebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 161, 30));
 
         deletebtn.setBackground(new java.awt.Color(102, 102, 102));
         deletebtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -199,7 +225,7 @@ public class MainFrame extends javax.swing.JDialog {
                 DeleteRecord(evt);
             }
         });
-        jPanel2.add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 120, 161, 30));
+        jPanel2.add(deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 161, 30));
 
         exitbtn.setBackground(new java.awt.Color(102, 102, 102));
         exitbtn.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -211,21 +237,25 @@ public class MainFrame extends javax.swing.JDialog {
                 exitbtnMouseClicked(evt);
             }
         });
-        jPanel2.add(exitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 345, 161, 30));
+        jPanel2.add(exitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 450, 140, 30));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Black and White Illustrated Custom Motorcycle Poster.jpg"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 400));
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -464,6 +494,8 @@ public class MainFrame extends javax.swing.JDialog {
     private javax.swing.JButton deletebtn;
     private javax.swing.JButton exitbtn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton leavebtn;

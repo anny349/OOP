@@ -54,10 +54,10 @@ public class LogInFrame extends javax.swing.JFrame {
         jLabel2.setText("Username:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Bodoni MT", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
         jLabel1.setText("MotorPH Portal");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, -1));
 
         usernameTF.setBackground(new java.awt.Color(102, 102, 102));
         usernameTF.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N

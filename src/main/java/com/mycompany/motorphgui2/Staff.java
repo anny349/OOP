@@ -46,8 +46,12 @@ public class Staff extends Employees {
 
             // Define header columns
             String[] header = {line1[0], line1[1], line1[2], line1[6], line1[7], line1[8], line1[9]};
-            details = new DefaultTableModel(header, 0);
-
+                details = new DefaultTableModel(header, 0) {
+                       @Override
+                       public boolean isCellEditable(int row, int column) {
+                           return false;  // Disable editing for all cells
+                       }
+                   };
             String[] line;
             while ((line = csvreader.readNext()) != null) {
                 if (line.length >= 10) {  // Ensure there are enough columns in each row
@@ -66,7 +70,12 @@ public class Staff extends Employees {
         String[] columnNames = {"LeaveID", "Employee Number", "Last Name", "Start Date", "End Date", "Number of Days", "Type of Leave", "Reason", "Application Status"};
 
         // Create the table model with column names
-        DefaultTableModel tableModel = new DefaultTableModel(columnNames, 0);
+        DefaultTableModel tableModel = new DefaultTableModel(columnNames, 0) {
+                @Override
+                public boolean isCellEditable(int row, int column) {
+                    return false;  // Disable editing for all cells
+                }
+         };
 
         // Read the CSV file
         try (CSVReader csvReader = new CSVReader(new FileReader(filename))) {
@@ -104,7 +113,12 @@ public class Staff extends Employees {
 
             String[] line1 = csvreader.readNext();
             String[] header = {line1[0], line1[1],line1[2],line1[3],line1[4],line1[5] };
-            leave = new DefaultTableModel(header,0);
+             leave = new DefaultTableModel(header, 0) {
+                @Override
+                public boolean isCellEditable(int row, int column) {
+                    return false;  // Disable editing for all cells
+                }
+            };
 
             String[] line;
 
