@@ -268,6 +268,7 @@ public class AddEmployeeFrame extends javax.swing.JDialog {
         });
         getContentPane().add(closeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 550, 60, 30));
 
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Black and White Illustrated Custom Motorcycle Poster.jpg"))); // NOI18N
         backgroundLabel.setToolTipText("");
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 590, 600));
 

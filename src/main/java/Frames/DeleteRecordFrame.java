@@ -245,6 +245,8 @@ public class DeleteRecordFrame extends javax.swing.JDialog {
         statusCB.setToolTipText("Choose from Regular, Probationary, or Contractual.");
         statusCB.setEnabled(false);
         getContentPane().add(statusCB, new org.netbeans.lib.awtextra.AbsoluteConstraints(149, 302, 387, -1));
+
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Grey White Minimalist Best Motorcycle Collection Instagram Story.jpg"))); // NOI18N
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 600));
 
         pack();

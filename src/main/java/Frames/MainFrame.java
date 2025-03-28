@@ -212,6 +212,9 @@ public class MainFrame extends javax.swing.JDialog {
             }
         });
         jPanel2.add(exitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 345, 161, 30));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Black and White Illustrated Custom Motorcycle Poster.jpg"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 400));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

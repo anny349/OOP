@@ -305,6 +305,9 @@ public class PayslipFrame extends javax.swing.JDialog {
         positioncb.setToolTipText("");
         positioncb.setEnabled(false);
         jPanel1.add(positioncb, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 314, 387, -1));
+
+        backgroundLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Gray White Creative Motorcycle Present Flyer (1).jpg"))); // NOI18N
         jPanel1.add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 600));
 
         jTabbedPane1.addTab("Employee Details", jPanel1);

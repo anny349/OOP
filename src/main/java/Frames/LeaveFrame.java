@@ -97,6 +97,7 @@ public class LeaveFrame extends javax.swing.JDialog {
         applyButton = new javax.swing.JButton();
         closeButton = new javax.swing.JButton();
         backgroundLabel = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(jEditorPane1);
 
@@ -381,6 +382,11 @@ public class LeaveFrame extends javax.swing.JDialog {
         getContentPane().add(closeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 580, 94, 30));
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 630));
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Black and White Illustrated Custom Motorcycle Poster.jpg"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 670, 620));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -521,6 +527,7 @@ public class LeaveFrame extends javax.swing.JDialog {
     private javax.swing.JLabel firstNameLabel;
     private javax.swing.JTextField firstNameTF;
     private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

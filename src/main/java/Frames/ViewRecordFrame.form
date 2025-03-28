@@ -492,6 +492,12 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JLabel" name="backgroundLabel">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Gray White Creative Motorcycle Present Flyer (1).jpg"/>
+        </Property>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="0" y="0" width="710" height="610"/>
