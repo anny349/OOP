@@ -142,7 +142,7 @@
     <Component class="javax.swing.JLabel" name="backgroundLabel">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\DAVID\Desktop\TA\src\main\java\Frames\Red and Beige Geometric Style Custom Motorcycle Garage Presentation.png"/>
+          <Image iconType="3" name="/Frames/Red and Beige Geometric Style Custom Motorcycle Garage Presentation.png"/>
         </Property>
       </Properties>
       <Constraints>

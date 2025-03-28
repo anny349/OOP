@@ -196,7 +196,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\DAVID\Desktop\TA\src\main\java\Frames\Dark Sports Moto Racing Cross Instagram Post.jpg"/>
+              <Image iconType="3" name="/Frames/Dark Sports Moto Racing Cross Instagram Post.jpg"/>
             </Property>
           </Properties>
           <Constraints>

@@ -268,7 +268,7 @@ public class AddEmployeeFrame extends javax.swing.JDialog {
         });
         getContentPane().add(closeButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 550, 60, 30));
 
-        backgroundLabel.setIcon(new javax.swing.ImageIcon("C:\\Users\\DAVID\\Desktop\\TA\\src\\main\\java\\Frames\\Gray White Creative Motorcycle Present Flyer (1).jpg")); // NOI18N
+        backgroundLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/Gray White Creative Motorcycle Present Flyer (1).jpg"))); // NOI18N
         backgroundLabel.setToolTipText("");
         getContentPane().add(backgroundLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 590, 600));
 

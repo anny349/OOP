@@ -101,7 +101,7 @@ public class LogInFrame extends javax.swing.JFrame {
         jPanel1.add(exitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, 50, 30));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\DAVID\\Desktop\\TA\\src\\main\\java\\Frames\\Dark Sports Moto Racing Cross Instagram Post.jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/Dark Sports Moto Racing Cross Instagram Post.jpg"))); // NOI18N
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, 430));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

@@ -100,20 +100,11 @@ public class MainFrame extends javax.swing.JDialog {
             Class[] types = new Class [] {
                 java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
             };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
-            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
         });
-        table1.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_LAST_COLUMN);
-        table1.setAutoscrolls(false);
         table1.setSelectionBackground(new java.awt.Color(102, 102, 102));
         table1.setSelectionForeground(new java.awt.Color(255, 255, 255));
         table1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
@@ -222,8 +213,7 @@ public class MainFrame extends javax.swing.JDialog {
         });
         jPanel2.add(exitbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 255, 161, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DAVID\\Desktop\\TA\\src\\main\\java\\Frames\\Red and Beige Geometric Style Custom Motorcycle Garage Presentation.png")); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Frames/Red and Beige Geometric Style Custom Motorcycle Garage Presentation.png"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 400));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
